@@ -8,19 +8,26 @@ function Header(){
     return(
 
         <header>
-            <h3 className="logo">
-                logo
-            </h3>
-
             
-        <div className="menu">
-            <br/> <Link to ='/'>Home</Link> 
-             <Link to ='/cadastro'>Cadastro</Link> 
-             <Link to ='/contacorrente'>Conta corrente</Link> 
-            <Link to ='/sobrenos'>Sobre nós</Link>
-        </div>
+        <nav>
+            <a href ="/"><img className = "logo"  src = "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="mestre"></img></a>
+            
+
+            <ul className="list">
+                <li><a href ="/">Home</a></li>
+                <li><a href ="/cadastro">Cadastro</a></li>
+                <li><a href ="/contacorrente">Conta Corrente</a></li>
+                <li><a href ="/sobrenos">Sobre Nós</a></li>
+                    
+            </ul>
+            
+        </nav>
         </header>
+        
     )
 }
 
 export default Header;
+
+
+
