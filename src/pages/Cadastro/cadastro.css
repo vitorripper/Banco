@@ -1,0 +1,52 @@
+
+.login{
+    background: white;
+    border-radius: 25px;
+    padding: 100px 2px;
+    font-size: 20pt;
+    font-style: normal ;
+    padding-top: 0.5%;
+    padding-bottom: 25%;
+
+    width: 650px;
+    height: 200px;
+    margin:auto;
+    margin-top: 0%;
+    box-shadow: 3px 3px 10px rgb(53, 49, 49);
+    margin-bottom: 1px;
+    text-align:center;
+    line-height: 20px;
+    
+}
+.titulo{
+    
+    margin-top: 20px ;
+
+}
+.cadastro{
+    line-height: 30px;
+
+}
+input{
+    width: 180px;
+}
+button{
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px #999;
+
+}
+.mostracadastro{
+    font-size: 20pt;
+    font-style: normal;
+    
+    line-height: 30px;
+    
+}
