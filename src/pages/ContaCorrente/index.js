@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import {useState} from 'react';
+import './contacorrente.css';
 
 function ContaCorrente(){
     const[saldo,setSaldo] = useState('xxxxxxxxxxxxxxx')

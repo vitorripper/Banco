@@ -38,6 +38,7 @@ function Cadastro(){
         
         <div className='login'>
             <h1 className='titulo' align='center'>Cadastro</h1>
+
             <form onSubmit={cadastrarCliente}> 
             <div className='cadastro'>
             <label> Nome do cliente: </label>
@@ -56,14 +57,14 @@ function Cadastro(){
             <br></br>
 
             <label> Endereco do cliente: </label>
-            <input placeholder="Informe o endereco do cliente"  valeu={endereco} 
+            <input className='endereco' placeholder="Informe o endereco do cliente"  valeu={endereco} 
             onChange={(evento)=>setendereco(evento.target.value)}>
 
             </input>
 
             <br></br>
             
-            <button type="submit">Cadastrar</button>
+            <button className='botao' type="submit">Cadastrar</button>
             </div>
             
             </form>

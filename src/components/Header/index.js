@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import style from './style.css';
+import './style.css';
 
 function Header(){
 
@@ -8,7 +8,11 @@ function Header(){
     return(
 
         <header>
-            <h3 className="logo">Logo</h3>
+            <h3 className="logo">
+                logo
+            </h3>
+
+            
         <div className="menu">
             <br/> <Link to ='/'>Home</Link> 
              <Link to ='/cadastro'>Cadastro</Link> 
