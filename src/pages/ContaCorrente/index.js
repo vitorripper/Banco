@@ -3,27 +3,51 @@ import {useState} from 'react';
 import './contacorrente.css';
 
 function ContaCorrente(){
-    const[saldo,setSaldo] = useState('xxxxxxxxxxxxxxx')
+    const[deposito, setDeposito]= useState(0)
+    const[saque, setSaque]= useState(0)
+    
+    
+    
 
-    const[saldoCliente, setSaldoCliente]=useState({
-        contaCliente:"XXXXXXXXXXXXXXXXXXXX"
-    })
+    const[saldoCliente, setSaldoCliente]=useState(0)
+
+    function movimentacao(evento){
+        evento.preventDefault();
+        alert('Movimentação financeira feita com sucesso');
+
+        setSaldoCliente(parseInt(saldoCliente) + parseInt(deposito) - parseInt(saque))
+        
+    }
     
 
 
     return(
-        <div>
+        <div className="">
             <h1 align='center'>Conta Corrente</h1>
-            <form>
+            <form onSubmit={movimentacao}>
+
 
                 <label> Déposito: </label>
-                <input placeholder="Informe o valor do depósito">
+                <input 
+                type="number" 
+                id ="deposito"
+                name="deposito"
+                valeu={deposito}
+                onChange={(evento) => setDeposito(evento.target.value)}  
+                placeholder="Informe o valor do depósito">
+                
                 </input>
 
                 <br></br>
 
                 <label> Saque: </label>
-                <input placeholder="Informe o valor do saque">
+                <input
+                type="number" 
+                id ="saque"
+                name="saque"
+                value = {saque}
+                onChange={(evento) => setSaque(evento.target.value)}
+                placeholder="Informe o valor do saque">
                 </input>
                 
                 <br></br>
@@ -36,7 +60,11 @@ function ContaCorrente(){
             <br></br>
 
             <div>
-                <span>Saldo Atual: {saldoCliente.contaCliente}</span>
+                <span>Saldo Atual: {saldoCliente}</span>
+                
+
+                
+
             </div>
         </div>
     )

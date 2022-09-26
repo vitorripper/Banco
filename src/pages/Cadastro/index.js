@@ -42,7 +42,7 @@ function Cadastro(){
             <form onSubmit={cadastrarCliente}> 
             <div className='cadastro'>
             <label> Nome do cliente: </label>
-            <input className='nome' placeholder="Informe o nome do cliente"  valeu={nome} 
+            <input className='nome' placeholder="Informe o nome do cliente"  value={nome} 
             onChange={(evento)=>setNome(evento.target.value)}>
 
             </input>
