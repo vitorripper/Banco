@@ -9,12 +9,13 @@ function ContaCorrente(){
     
     
 
-    const[saldoCliente, setSaldoCliente]=useState(0)
+    const[saldoCliente, setSaldoCliente]=useState(1000)
 
     function movimentacao(evento){
         evento.preventDefault();
         alert('Movimentação financeira feita com sucesso');
 
+        
         setSaldoCliente(parseInt(saldoCliente) + parseInt(deposito) - parseInt(saque))
         
     }
@@ -22,8 +23,11 @@ function ContaCorrente(){
 
 
     return(
-        <div className="">
-            <h1 align='center'>Conta Corrente</h1>
+        <div className="conta">
+
+            <div className="titulo">
+                <h1 align='center'>Conta Corrente</h1>
+            </div>
             <form onSubmit={movimentacao}>
 
 
@@ -42,7 +46,9 @@ function ContaCorrente(){
 
                 <label> Saque: </label>
                 <input
-                type="number" 
+                type="number"
+                format="currency"
+                precision ='2' 
                 id ="saque"
                 name="saque"
                 value = {saque}
@@ -60,7 +66,8 @@ function ContaCorrente(){
             <br></br>
 
             <div>
-                <span>Saldo Atual: {saldoCliente}</span>
+                <span>Saldo Atual: {saldoCliente.toLocaleString("pt-BR", 
+     { style: "currency" , currency:"BRL"})}</span>
                 
 
                 
