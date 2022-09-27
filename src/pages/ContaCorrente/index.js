@@ -30,7 +30,7 @@ function ContaCorrente(){
             </div>
             <form onSubmit={movimentacao}>
 
-
+                <div className="valor">
                 <label> Déposito: </label>
                 <input 
                 type="number" 
@@ -55,9 +55,10 @@ function ContaCorrente(){
                 onChange={(evento) => setSaque(evento.target.value)}
                 placeholder="Informe o valor do saque">
                 </input>
+                </div>
                 
                 <br></br>
-                <button type="submit">Atualizar Saldo</button>
+                <button className="botao" type="submit">Atualizar Saldo</button>
                 <br></br>
 
 
@@ -65,7 +66,7 @@ function ContaCorrente(){
 
             <br></br>
 
-            <div>
+            <div className="mostrasaldo">
                 <span>Saldo Atual: {saldoCliente.toLocaleString("pt-BR", 
      { style: "currency" , currency:"BRL"})}</span>
                 
