@@ -1,11 +1,24 @@
+#todo{
+    width: 700px;
+    height: 400px;
+    background: rgb(255, 174, 235);
+}
+@media screen and (max-width:900px){
+    #todo{
+    width: 1000px;
+    height: 400px;
+    background: rgb(255, 174, 235);
+    
+    }
+}
 #sobrenos{
-    height: 550px;
-    width: 650px;
+    height: 400px;
+    width: 600px;
     background: wheat;
-    margin: 75px 80px;
+    margin: 75px 70px;
     border-radius: 20px;
     color: rgb(70, 69, 68);
-    opacity: 90%;
+    float: left;
 }
 #titulo{
     padding: 30px 115px 15px 35px;
@@ -17,10 +30,15 @@
     padding: 20px 35px 0px 35px;
 }
 #lorem2{
-    font: 21px normal;
+    margin-top: 10px;
+    font: normal 18px georgia;
     text-align: justify;
     padding: 20px 35px 0px 35px;
 }
 #imagem{
-    
+    margin: 80px 60px 0 0;
+    float: right;
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
 }

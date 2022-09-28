@@ -1,14 +1,13 @@
 import { Link } from "react-router-dom";
-import "./sobrenos.css";
+import "./sobrenos.css"
+import imagem from "./imagem-sobrenos.jpg"
 
 function SobreNos(){
 
 
 
     return(
-        <div>
-            <h1 align='center'>Sobre nós</h1>
-
+        <div id="todo">
             <div id="sobrenos">
                 <h1 id="titulo">Sobre a EMPRESA</h1>
                 <p id="lorem1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dictum sit amet magna vel egestas. Sed ornare sem vel ipsum pretium eleifend. Integer orci massa, tincidunt id hendrerit id, vulputate vel velit. </p>
@@ -16,7 +15,7 @@ function SobreNos(){
             </div>
 
             <div>
-                <img id="imagem" src="imagem-sobrenos.jpg" alt="foto-sobrenos"/>
+                <img id="imagem" src={imagem} alt="foto-sobrenos"/>
             </div>
         </div>
     )
