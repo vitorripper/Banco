@@ -117,4 +117,11 @@ input{
     margin-right: 40px;
     
 }
+body{
+    width: auto;
+    height: 1000px;
+    
+    
+    background: rgb(255, 174, 235);
+}
 
