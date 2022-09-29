@@ -1,0 +1,31 @@
+.homep{
+    display: inline;
+   
+}
+
+.imagemfundo{
+    margin-top: 5%;
+    border-radius: 0px 10px 10px 0px;
+    width: 53%;
+    height: 53%;
+    display: inline;
+    
+    
+}
+
+
+.texto{
+    width: 47%;
+    display: inline;
+    float: right;
+    text-align: center;
+    background: palegreen;
+    margin-top: 5%;
+    
+    
+    
+}
+body{
+    background: white;
+}
+    
