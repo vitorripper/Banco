@@ -22,8 +22,13 @@ function Header(){
                 <li><a href ="/sobrenos">Sobre Nós</a></li>
                     
             </ul>
+
+            <div className="menu">
+                <button><img className="icon" src=""></img></button>
+            </div>
             
         </nav>
+
         </header>
         
     )

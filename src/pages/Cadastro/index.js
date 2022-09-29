@@ -1,9 +1,10 @@
 import {useState} from 'react';
 import './cadastro.css';
 
+
 function Cadastro(){
 
-    const [nome, setNome]= useState('.....');
+    const [nome, setNome]= useState('');
     const [cpf, setcpf]= useState('.....');
     const [endereco, setendereco]= useState('.....');
 
