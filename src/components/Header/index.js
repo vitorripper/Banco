@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import './style.css';
 import logo from './bolsa-de-dinheiro.png';
+import icone from './icone.png';
 
 function Header(){
 
@@ -23,11 +24,10 @@ function Header(){
                     
             </ul>
 
-            <div className="menu">
-                <button><img className="icon" src=""></img></button>
-            </div>
             
         </nav>
+        
+    
 
         </header>
         
