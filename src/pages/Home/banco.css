@@ -15,12 +15,13 @@
 
 
 .texto{
-    width: 47%;
+    width: 40%;
     display: inline;
     float: right;
     text-align: center;
-    background: palegreen;
-    margin-top: 5%;
+    margin-top: 10%;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
     
     
     
