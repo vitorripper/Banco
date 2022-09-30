@@ -1,8 +1,10 @@
 .homep{
-    display: inline;
-    background-color: #4ac3d8;
+    min-height: 800px;
+    max-width: 1920;
+
    
 }
+
 
 .imagemfundo{
     margin-top: 5%;
@@ -16,15 +18,42 @@
 
 
 .texto{
-    width: 40%;
+    width: 35%;
     display: inline;
     float: right;
-    text-align: center;
-    margin-top: 10%;
-    margin-right: 2.5%;
+    text-align: justify;
+    margin-top: 15%;
+    margin-right: 5%;
     margin-left: 2.5%;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-right: 15px;
+    color: #171c2f;
     
-}body{
-    background: #add9e0;
+    
 }
+
+#txt2{
+    font: bold 42pt arial;
+    margin-bottom: 1%;
+
+}
+
+#textinho{
+    font: normal 14pt helvetica;
+    line-height: 130%;
+}
+
+#botao{
+    margin-top: 8%;
+    border-radius: 10px;
+    width: 50%;
+    height: 50px;
+    background-color: #171c2f;
+    color: white;
+    font: normal 90% arial;
+    text-align: center;
+}
+
+body{
+    background: white;
+}
+    
