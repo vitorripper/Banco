@@ -24,6 +24,8 @@ function Cadastro(){
         evento.preventDefault();
         alert("Cliente cadastrado com sucesso!!!!");
 
+        
+
         setDadosCliente({
 
             nomeCliente:nome,

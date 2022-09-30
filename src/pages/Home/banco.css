@@ -5,12 +5,11 @@
    
 }
 
-
 .imagemfundo{
     margin-top: 5%;
     border-radius: 0px 10px 10px 0px;
-    width: 53%;
-    height: 53%;
+    width: 47%;
+    height: 47%;
     display: inline;
     
     
@@ -22,7 +21,7 @@
     display: inline;
     float: right;
     text-align: justify;
-    margin-top: 15%;
+    margin-top: 10%;
     margin-right: 5%;
     margin-left: 2.5%;
     padding-right: 15px;
