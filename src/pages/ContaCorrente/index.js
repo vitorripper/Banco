@@ -67,7 +67,7 @@ function ContaCorrente(){
 
             <div>
                 <span>Saldo Atual: {saldoCliente.toLocaleString("pt-BR", 
-     { style: "currency" , currency:"BRL"})}</span>
+                { style: "currency" , currency:"BRL"})}</span>
                 
 
                 
