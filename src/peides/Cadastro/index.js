@@ -1,22 +1,16 @@
-/** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *
- *                              SENAC - TADS - Programacao Web                                      *
- *                           ADO #02 Trabalhando As Rotas e LINKS                                   *
- * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*
- *                               Nome : << Vitor Ripper Araujo> >                                   *
- * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
-import {useState} from 'react';
-import './cadastro.css';
 
+import {useState} from 'react';
+import './stylecontacorrente.css';
 
 function Cadastro(){
 
-    const [nome, setNome]= useState('');
+    const [razaos, setRazaos]= useState('');
     const [cpf, setcpf]= useState('.....');
     const [endereco, setendereco]= useState('.....');
 
 
     const [dadosCliente, setDadosCliente]=useState({
-        nomeCliente:"-----------",
+        razaoSocial:"-----------",
         cpfCliente:"------------",
         enderecoCliente:"------------"
      })
@@ -34,7 +28,7 @@ function Cadastro(){
 
         setDadosCliente({
 
-            nomeCliente:nome,
+            razaoSocial:razaos,
             cpfCliente:cpf,
             enderecoCliente:endereco
 
@@ -50,15 +44,15 @@ function Cadastro(){
 
             <form onSubmit={cadastrarCliente}> 
             <div className='cadastro'>
-            <label> Nome do cliente: </label>
-            <input className='nome' placeholder="Informe o nome do cliente"  value={nome} 
-            onChange={(evento)=>setNome(evento.target.value)}>
+            <label> Razão Social: </label>
+            <input className='nome' placeholder="Informe o nome do cliente"  value={razaos} 
+            onChange={(evento)=>setRazaos(evento.target.value)}>
 
             </input>
             <br></br>
 
             <label> Numero do CPF: </label>
-            <input placeholder="Informe o CPF do cliente"  valeu={cpf} 
+            <input placeholder="Informe o CPF do cliente" type="number" valeu={cpf} 
             onChange={(evento)=>setcpf(evento.target.value)}>
 
             
@@ -81,7 +75,7 @@ function Cadastro(){
 
             <div className='mostracadastro'>
 
-                <span>Nome do cliente: {dadosCliente.nomeCliente} </span>
+                <span>Razão Social: {dadosCliente.razaoSocial} </span>
                 <br></br>
                 <span>CPF do cliente: {dadosCliente.cpfCliente} </span>
                 <br></br>
@@ -94,5 +88,4 @@ function Cadastro(){
         
     )
 }
-
 export default Cadastro;

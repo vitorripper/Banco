@@ -1,0 +1,12 @@
+
+.erro{
+    width:auto;
+    height: 680px;
+    background-image: url(./erro.jpg);
+    background-size: contain;
+    
+    opacity: 0.9;
+}
+.erh1{
+    margin:auto;
+}

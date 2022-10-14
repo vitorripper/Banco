@@ -1,13 +1,13 @@
-import RouterApp from "./routes"; 
- function App() {
-  
-   return (
-  
+import RouterApp from "./RoutesApp";
+
+
+function App() {
+  return(
+    
     <RouterApp/>
+    
+  )
+}
  
-   );
- 
-   }
- 
- export default App;
+export default App;
  
